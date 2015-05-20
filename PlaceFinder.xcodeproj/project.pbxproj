@@ -13,8 +13,6 @@
 		77E4B90D19B48FCD006AFFD4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 77E4B90B19B48FCD006AFFD4 /* InfoPlist.strings */; };
 		77E4B90F19B48FCD006AFFD4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E4B90E19B48FCD006AFFD4 /* main.m */; };
 		77E4B91319B48FCD006AFFD4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E4B91219B48FCD006AFFD4 /* AppDelegate.m */; };
-		77E4B91619B48FCD006AFFD4 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77E4B91419B48FCD006AFFD4 /* Main_iPhone.storyboard */; };
-		77E4B91919B48FCD006AFFD4 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77E4B91719B48FCD006AFFD4 /* Main_iPad.storyboard */; };
 		77E4B91C19B48FCD006AFFD4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E4B91B19B48FCD006AFFD4 /* ViewController.m */; };
 		77E4B91E19B48FCD006AFFD4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77E4B91D19B48FCD006AFFD4 /* Images.xcassets */; };
 		77E4B92519B48FCD006AFFD4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77E4B92419B48FCD006AFFD4 /* XCTest.framework */; };
@@ -22,6 +20,8 @@
 		77E4B92719B48FCD006AFFD4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77E4B90619B48FCD006AFFD4 /* UIKit.framework */; };
 		77E4B92F19B48FCD006AFFD4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 77E4B92D19B48FCD006AFFD4 /* InfoPlist.strings */; };
 		77E4B93119B48FCD006AFFD4 /* PlaceFinderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E4B93019B48FCD006AFFD4 /* PlaceFinderTests.m */; };
+		77E4B93B19B49075006AFFD4 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77E4B93A19B49075006AFFD4 /* ViewController.xib */; };
+		77E4B93D19B490A2006AFFD4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77E4B93C19B490A2006AFFD4 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,8 +45,6 @@
 		77E4B91019B48FCD006AFFD4 /* PlaceFinder-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PlaceFinder-Prefix.pch"; sourceTree = "<group>"; };
 		77E4B91119B48FCD006AFFD4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		77E4B91219B48FCD006AFFD4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		77E4B91519B48FCD006AFFD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		77E4B91819B48FCD006AFFD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		77E4B91A19B48FCD006AFFD4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		77E4B91B19B48FCD006AFFD4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		77E4B91D19B48FCD006AFFD4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -55,6 +53,8 @@
 		77E4B92C19B48FCD006AFFD4 /* PlaceFinderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PlaceFinderTests-Info.plist"; sourceTree = "<group>"; };
 		77E4B92E19B48FCD006AFFD4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		77E4B93019B48FCD006AFFD4 /* PlaceFinderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaceFinderTests.m; sourceTree = "<group>"; };
+		77E4B93A19B49075006AFFD4 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		77E4B93C19B490A2006AFFD4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77E4B93D19B490A2006AFFD4 /* CoreLocation.framework in Frameworks */,
 				77E4B90519B48FCD006AFFD4 /* CoreGraphics.framework in Frameworks */,
 				77E4B90719B48FCD006AFFD4 /* UIKit.framework in Frameworks */,
 				77E4B90319B48FCD006AFFD4 /* Foundation.framework in Frameworks */,
@@ -103,6 +104,7 @@
 		77E4B90119B48FCD006AFFD4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				77E4B93C19B490A2006AFFD4 /* CoreLocation.framework */,
 				77E4B90219B48FCD006AFFD4 /* Foundation.framework */,
 				77E4B90419B48FCD006AFFD4 /* CoreGraphics.framework */,
 				77E4B90619B48FCD006AFFD4 /* UIKit.framework */,
@@ -116,10 +118,9 @@
 			children = (
 				77E4B91119B48FCD006AFFD4 /* AppDelegate.h */,
 				77E4B91219B48FCD006AFFD4 /* AppDelegate.m */,
-				77E4B91419B48FCD006AFFD4 /* Main_iPhone.storyboard */,
-				77E4B91719B48FCD006AFFD4 /* Main_iPad.storyboard */,
 				77E4B91A19B48FCD006AFFD4 /* ViewController.h */,
 				77E4B91B19B48FCD006AFFD4 /* ViewController.m */,
+				77E4B93A19B49075006AFFD4 /* ViewController.xib */,
 				77E4B91D19B48FCD006AFFD4 /* Images.xcassets */,
 				77E4B90919B48FCD006AFFD4 /* Supporting Files */,
 			);
@@ -231,9 +232,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77E4B91919B48FCD006AFFD4 /* Main_iPad.storyboard in Resources */,
 				77E4B91E19B48FCD006AFFD4 /* Images.xcassets in Resources */,
-				77E4B91619B48FCD006AFFD4 /* Main_iPhone.storyboard in Resources */,
+				77E4B93B19B49075006AFFD4 /* ViewController.xib in Resources */,
 				77E4B90D19B48FCD006AFFD4 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,22 +284,6 @@
 				77E4B90C19B48FCD006AFFD4 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		77E4B91419B48FCD006AFFD4 /* Main_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				77E4B91519B48FCD006AFFD4 /* Base */,
-			);
-			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		77E4B91719B48FCD006AFFD4 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				77E4B91819B48FCD006AFFD4 /* Base */,
-			);
-			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		77E4B92D19B48FCD006AFFD4 /* InfoPlist.strings */ = {
@@ -392,10 +376,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Vinothini Vaithyalingam (XFRENU9QKK)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PlaceFinder/PlaceFinder-Prefix.pch";
 				INFOPLIST_FILE = "PlaceFinder/PlaceFinder-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7b5d2e05-f3ec-48ee-8e8c-2b6191b14d4a";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -405,10 +393,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Vinothini Vaithyalingam (XFRENU9QKK)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PlaceFinder/PlaceFinder-Prefix.pch";
 				INFOPLIST_FILE = "PlaceFinder/PlaceFinder-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7b5d2e05-f3ec-48ee-8e8c-2b6191b14d4a";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -474,6 +466,7 @@
 				77E4B93619B48FCD006AFFD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		77E4B93719B48FCD006AFFD4 /* Build configuration list for PBXNativeTarget "PlaceFinderTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +475,7 @@
 				77E4B93919B48FCD006AFFD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
